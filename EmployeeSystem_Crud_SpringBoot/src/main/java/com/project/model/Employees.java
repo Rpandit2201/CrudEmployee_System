@@ -2,7 +2,6 @@ package com.project.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,8 +18,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Employee {
-	
+public class Employees {
 	@Id
 	//@GeneratedValue()   we can use for auto generate id if dont want write manually
 	private int empid;
@@ -31,5 +29,6 @@ public class Employee {
 	
 	@Column
 	private double salary;
+
 
 }
